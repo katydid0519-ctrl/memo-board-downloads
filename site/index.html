@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="메모를 붙이고, 화면에 고정하고, 일정을 함께 보는 Windows용 로컬 메모 보드입니다.">
-  <title>메모 보드 · Windows 다운로드</title>
+  <meta name="description" content="Windows, macOS, Linux에서 메모를 붙이고, 화면에 고정하고, 일정을 함께 보는 로컬 메모 보드입니다.">
+  <title>메모 보드 · 다운로드</title>
   <link rel="icon" href="icon.png" type="image/png">
   <link rel="stylesheet" href="site.css">
 </head>
@@ -13,22 +13,33 @@
   <main class="wrap">
     <section class="hero" aria-labelledby="title">
       <div>
-        <p class="version">Windows x64 · 1.10.0</p>
+        <p class="version">Windows · macOS · Linux</p>
         <h1 id="title">메모를 붙이고,<br>하루를 정리하세요.</h1>
         <p class="intro">보드에서 메모를 옮기고, 필요한 것만 화면 위에 고정하세요. 메모와 일정을 한 앱에서 볼 수 있습니다.</p>
-        <a class="download" href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/download/v1.10.0/MemoBoard-Setup-1.10.0.exe">Windows 설치 파일 다운로드</a>
+        <div class="downloads" aria-label="운영체제별 다운로드" role="group">
+          <a class="download" href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/download/v1.10.0/MemoBoard-Setup-1.10.0.exe">Windows x64 <small>1.10.0 · EXE</small></a>
+          <a class="download" href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/download/v1.10.1/MemoBoard-1.10.1-macOS-arm64.zip">macOS Apple Silicon <small>1.10.1 · ZIP</small></a>
+          <a class="download" href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/download/v1.10.1/MemoBoard-1.10.1-macOS-x64.zip">macOS Intel <small>1.10.1 · ZIP</small></a>
+          <a class="download" href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/download/v1.10.1/MemoBoard-1.10.1-linux-x64.AppImage">Linux x64 <small>1.10.1 · AppImage</small></a>
+        </div>
         <nav aria-label="다운로드 정보">
-          <a href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/tag/v1.10.0">릴리즈 노트</a>
-          <a href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/download/v1.10.0/SHA256SUMS.txt">SHA-256</a>
+          <a href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases">릴리즈 노트</a>
+          <a href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/download/v1.10.0/SHA256SUMS.txt">Windows SHA-256</a>
+          <a href="https://github.com/katydid0519-ctrl/memo-board-downloads/releases/download/v1.10.1/SHA256SUMS.txt">macOS·Linux SHA-256</a>
         </nav>
       </div>
       <figure><img src="preview.png" alt="메모 보드 월간 달력과 선택한 날짜의 세부 일정"></figure>
     </section>
     <section class="install" id="install" aria-labelledby="install-title">
       <h2 id="install-title">설치와 업데이트</h2>
-      <p>설치 파일을 내려받아 실행하세요. 이미 사용 중이면 Windows 알림 영역에서 메모 보드를 완전히 종료한 후 새 설치 파일을 실행합니다. 메모와 첨부파일은 사용자별 앱 데이터 폴더에 저장됩니다.</p>
+      <ul>
+        <li><strong>Windows</strong> — 앱을 완전히 종료한 후 EXE를 실행하세요.</li>
+        <li><strong>macOS</strong> — Apple 메뉴의 ‘이 Mac에 관하여’에서 칩을 확인하세요. 해당 ZIP을 풀고 ‘메모 보드’ 앱을 응용 프로그램 폴더로 옮기세요.</li>
+        <li><strong>Linux</strong> — AppImage에 실행 권한을 부여한 뒤 여세요. 캘린더 주소 저장에는 데스크톱 보안 저장소가 필요합니다.</li>
+      </ul>
+      <p>새 버전은 직접 내려받아 적용합니다. 메모와 첨부파일은 사용자별 앱 데이터 폴더에 저장됩니다.</p>
       <p>메모 기능은 계정 없이 사용할 수 있습니다. Google·Outlook 일정은 캘린더 관리에서 iCal 주소를 등록하면 읽기 전용으로 표시됩니다.</p>
-      <p>이 설치 파일에는 코드 서명이 없어 Windows 보안 경고가 표시될 수 있습니다.</p>
+      <p>Windows 설치 파일에는 코드 서명이 없으며, macOS 앱에는 Developer ID 서명과 Apple 공증이 없어 열기가 제한될 수 있습니다.</p>
     </section>
   </main>
 </body>
