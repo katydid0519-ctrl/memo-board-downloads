@@ -66,6 +66,15 @@ h2 { font-size: clamp(25px, 2.2vw, 36px); font-weight: 730; line-height: 1.22; l
 .architecture { font-size: 13px; color: var(--muted); margin-top: 4px; }
 .file { display: flex; align-items: center; justify-content: space-between; min-height: 35px; gap: 8px; margin-top: 18px; padding-top: 10px; border-top: 1px solid #e0e5e9; color: #3047b8; font-size: 13px; font-weight: 650; }
 .file i { font: 700 18px/1 system-ui; }
+.calendar-feature { display: grid; grid-template-columns: minmax(230px,.75fr) minmax(0,1.6fr); align-items: center; gap: clamp(24px,4vw,64px); padding-block: clamp(36px,5vw,72px); border-bottom: 1px solid var(--line); }
+.calendar-copy p { margin-top: 14px; color: var(--muted); font-size: 15px; line-height: 1.65; }
+.calendar-copy code { display: inline-block; padding: 1px 5px; border-radius: 4px; background: #e9ecf8; color: #273e97; font-size: .9em; white-space: nowrap; }
+.connect-steps { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; list-style: none; padding: 0; margin: 8px 0 0; color: #273957; font-size: 13px; font-weight: 620; }
+.connect-steps li + li::before { content: "›"; margin-right: 5px; color: #647184; }
+.calendar-preview { min-width: 0; }
+.calendar-preview a { display: block; border-radius: 12px; }
+.calendar-preview img { display: block; width: 100%; height: auto; border: 1px solid #c3cbc9; border-radius: inherit; box-shadow: 0 8px 22px -15px #16223750; }
+.calendar-preview figcaption { margin-top: 8px; color: var(--muted); font-size: 12px; }
 .installation { display: grid; grid-template-columns: .8fr 1.2fr; gap: 40px; padding-block: 53px 61px; }
 .help { border-top: 1px solid #bdc8ca; }
 details { border-bottom: 1px solid var(--line); }
@@ -100,6 +109,7 @@ footer > span { font-weight: 690; }
   .band { padding-block: 28px; }
   .packages { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin-top: 15px; }
   .installation { grid-template-columns: 1fr; gap: 20px; padding-block: 33px; }
+  .calendar-feature { grid-template-columns: 1fr; gap: 20px; }
 }
 @media (max-width: 400px) {
   .wrap { width: calc(100% - 28px); }
